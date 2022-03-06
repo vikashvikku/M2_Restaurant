@@ -29,7 +29,7 @@ public class menu{
           case 1:
             System.out.println("Starter");
           // Starting for loop for Calculating menu with price.
-            for(int i = 1; i <= 4; i++){
+            for(int i = 1; i <= 10; i++){
             System.out.println("Enter Your Starter Choices\n");
             
             // Here You can choose the Starter food
@@ -43,6 +43,8 @@ public class menu{
             System.out.println("Enter 8 for Egg Pakora - ₹ 90 ");
             System.out.println("Enter 9 for Chicken Pakora - ₹ 115 ");
             System.out.println("Enter 10 for Afghani Chicekn - ₹ 175 ");
+            System.out.println("Enter 99 for exit");
+
             Scanner sc0 = new Scanner(System.in);
             int starter = sc0.nextInt();
             
@@ -121,9 +123,10 @@ public class menu{
           case 2:
             System.out.println("Veg");
 
-            for(int i = 1; i <= 4; i++){
+            for(int i = 1; i <= 10; i++){
 
-            System.out.println("Select Your Food");
+            System.out.println("Select Your Food\n");
+
             System.out.println("Enter 1 for Plain Rice - ₹ 70 ");
             System.out.println("Enter 2 for Paneer Parantha - ₹ 55 ");
             System.out.println("Enter 3 for Gobhi Parantha - ₹ 45 ");
@@ -134,6 +137,8 @@ public class menu{
             System.out.println("Enter 8 for Malai Kopta - ₹ 210 ");
             System.out.println("Enter 9 for Matar Paneer - ₹ 195 ");
             System.out.println("Enter 10 for  Mix Veg - ₹ 175 ");
+            System.out.println("Enter 99 for exit");
+
             int veg = sc.nextInt();
             switch(veg){
               case 1:
@@ -210,9 +215,9 @@ public class menu{
           case 3:
             System.out.println("   Non-Veg  ");
 
-            for(int i = 1; i <= 4; i++){
+            for(int i = 1; i <= 10; i++){
 
-            System.out.println("Enter Your Nonveg Choices");
+            System.out.println("Enter Your Nonveg Choices\n");
 
             System.out.println("Enter 1 for Chicken Rice - ₹ 80 ");
             System.out.println("Enter 2 for Chicken Butter Masala - ₹ 255 ");
@@ -224,6 +229,7 @@ public class menu{
             System.out.println("Enter 8 for Kadhai Chicken - ₹ 210 ");
             System.out.println("Enter 9 for Fish - ₹ 195 ");
             System.out.println("Enter 10 for Egg Curry - ₹ 105 ");
+            System.out.println("Enter 99 for exit");
 
             Scanner sc1 = new Scanner(System.in);
             int nonveg = sc1.nextInt();
@@ -303,9 +309,9 @@ public class menu{
           case 4:
             System.out.println("Desserts");
 
-            for(int i = 1; i <= 4; i++){
+            for(int i = 1; i <= 10; i++){
 
-            System.out.println("Enter Your Deserts Choices");
+            System.out.println("Enter Your Deserts Choices\n");
 
             System.out.println("Enter 1 for Gulab Jamun - ₹ 20 ");
             System.out.println("Enter 2 for Kaju ki Barfi - ₹ 25 ");
@@ -317,6 +323,7 @@ public class menu{
             System.out.println("Enter 8 for Besan ka ladoo - ₹ 10 ");
             System.out.println("Enter 9 for Rassogula - ₹ 25 ");
             System.out.println("Enter 10 for Rasmalai - ₹ 25 ");
+            System.out.println("Enter 99 for exit");
 
 
             Scanner sc2 = new Scanner(System.in);
@@ -397,9 +404,9 @@ public class menu{
           case 5:
             System.out.println("Beverages");
 
-            for(int i = 1; i <= 4; i++){
+            for(int i = 1; i <= 10; i++){
 
-            System.out.println("Enter Your Beverages Choices");
+            System.out.println("Enter Your Beverages Choices\n");
 
             System.out.println("Enter 1 for Mango shake - ₹ 50 ");
             System.out.println("Enter 2 for Badam shake - ₹ 45 ");
@@ -411,6 +418,7 @@ public class menu{
             System.out.println("Enter 8 for Maza - ₹ 40 ");
             System.out.println("Enter 9 for Pepsi - ₹ 45 ");
             System.out.println("Enter 10 for Cold COffee - ₹ 132 ");
+            System.out.println("Enter 99 for exit");
 
             Scanner sc3 = new Scanner(System.in);
             int beverages = sc3.nextInt();
@@ -490,9 +498,9 @@ public class menu{
           case 6:
             System.out.println("  Fast Food  ");
 
-            for(int i = 1; i <= 4; i++){
+            for(int i = 1; i <= 10; i++){
 
-            System.out.println("Enter Your Choices for Fastfood");
+            System.out.println("Enter Your Choices for Fastfood\n");
 
             System.out.println("Enter 1 for Noodles - ₹ 70 ");
             System.out.println("Enter 2 for Momos - ₹ 55 ");
@@ -504,6 +512,7 @@ public class menu{
             System.out.println("Enter 8 for Pizza - ₹ 210 ");
             System.out.println("Enter 9 for Hot Dog - ₹ 195 ");
             System.out.println("Enter 10 for Sandwich - ₹ 175 ");
+            System.out.println("Enter 99 for exit");
 
             Scanner sc4 = new Scanner(System.in);
             int fast_food = sc4.nextInt();
