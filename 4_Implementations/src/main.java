@@ -20,6 +20,9 @@ class Restaurant{
     if (username.equals(Username) && password.equals(Password)) {
 
         System.out.println("Access Granted! Welcome!");
+        // Accessing the manager class.
+        Manager mng = new Manager();
+        mng.manager();
     }
 
     else if (username.equals(Username)) {
@@ -32,23 +35,10 @@ class Restaurant{
 
 }
 
-/*static void Hello(){
-  System.out.println("Hello WOrld");
-  Scanner S1 = new Scanner(System.in);
-  System.out.println("Enter Add");
-  int use = S1.nextInt();
-  int use2 = S1.nextInt();
-  int use3 = use + use2;
-  System.out.println(use3);
-      
-}*/
-
-
 
 
   public static void main(String []args) {
   System.out.println("\n\n    ***** Welcome to Restaurant ***** \n\n");
-  //int enter = 1;
   System.out.println("For Manager press 1 ");
   System.out.println("For Customer press 2 ");
   System.out.println("For Exit press 3 ");
@@ -57,11 +47,12 @@ class Restaurant{
   if(enter == 1){
     login();
   }
-  else{
-  //login();
-  // Hello();
+  else if(enter == 2){
   menu mn = new menu();
   mn.Food();
+  }
+  else{
+    System.out.println("SORRY! Wrong Input");
   }
 }
 }

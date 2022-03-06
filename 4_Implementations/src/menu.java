@@ -9,6 +9,48 @@ public class menu{
         int choice = sc.nextInt();
         switch(choice){
           case 1:
+            System.out.println("Starter");
+            System.out.println("Enter Your Starter Choices");
+            Scanner sc0 = new Scanner(System.in);
+            int starter = sc0.nextInt();
+            switch(starter){
+              case 1:
+                System.out.println("Tandoori Chicken - ₹ 110 ");
+                break;
+              case 2:
+                System.out.println(" Chicken Tikka - ₹ 185");
+                break;
+              case 3:
+                System.out.println(" Plain Tangri Kabab - ₹ 215");
+                break;
+              case 4:
+                System.out.println(" Fish Tikka - ₹ 160");
+                break;
+              case 5:
+                System.out.println(" Onion Pakora - ₹ 60");
+                break;
+              case 6:
+                System.out.println(" Mattar Tikki - ₹ 70");
+                break;
+              case 7:
+                System.out.println(" Paneer Pakora - ₹ 100");
+                break;
+              case 8:
+                System.out.println(" Egg Pakora - ₹ 90");
+                break;
+              case 9:
+                System.out.println(" Chicken Pakora - ₹ 115");
+                break;
+              case 10:
+                System.out.println(" Afghani Chicekn - ₹ 175");
+                break;
+              default:
+                System.out.println(" Invalid Entry ");
+                break;
+            }
+            break;
+            
+          case 2:
             System.out.println("Veg");
 
             System.out.println("Select Your Food");
@@ -50,7 +92,7 @@ public class menu{
             }
             break;
           
-          case 2:
+          case 3:
             System.out.println("   Non-Veg  ");
             System.out.println("Enter Your Nonveg Choices");
             Scanner sc1 = new Scanner(System.in);
@@ -91,7 +133,7 @@ public class menu{
                 break;
             }
             break;
-          case 3:
+          case 4:
             System.out.println("Desserts");
             System.out.println("Enter Your Deserts Choices");
             Scanner sc2 = new Scanner(System.in);
@@ -132,7 +174,7 @@ public class menu{
                 break;
             }
             break;
-          case 4:
+          case 5:
             System.out.println("Beverages");
             System.out.println("Enter Your Beverages Choices");
             Scanner sc3 = new Scanner(System.in);
@@ -173,7 +215,7 @@ public class menu{
                 break;
             }
             break;
-          case 5:
+          case 6:
             System.out.println("  Fast Food  ");
             System.out.println("Enter Your Choices for Fastfood");
             Scanner sc4 = new Scanner(System.in);
