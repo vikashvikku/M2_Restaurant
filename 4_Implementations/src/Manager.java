@@ -1,17 +1,23 @@
-import java.util.*;
-import java.util.Scanner;
+// import java.util.*;
+import java.util.Scanner; // Java package used for taking input in java
+
+// Declaration of Manager class
 public class Manager {
+
+  // Declaration of nmanager method.
   public void manager(){
     System.out.println("Welcome Manager");
     System.out.println("Enter Your Choice whom profile You want to see");
     Scanner sc = new Scanner(System.in);
     int choice = sc.nextInt();
+    // Here You can choose the employee profile
     switch(choice){
       case 1:
         System.out.println("Master Chef");
         System.out.println("Enter the person profile");
         Scanner sc1 = new Scanner(System.in);
         int masterchef = sc1.nextInt();
+        // Here You can select the profile of the Masterchefs.
         switch(masterchef){
           case 1:
             System.out.println("Name - Mr. ABC");
@@ -42,6 +48,7 @@ public class Manager {
         }
         break;
 
+        // Here You can choose the profile of Waiters.
       case 2:
         System.out.println("Waiter");
         System.out.println("Enter the Waiter profile");
@@ -89,6 +96,7 @@ public class Manager {
         }
         break;
 
+        // Here You can choose the profile of Security Guards.
       case 3:
         System.out.println("Scurity Guard");
         System.out.println("Enter Scurity Guard choice profile");
@@ -122,6 +130,7 @@ public class Manager {
         }
         break;
 
+        // Here You can choose the profile of Room cleaners.
       case 4:
         System.out.println("Room Cleaner");
         System.out.println("Enter choice of room cleaner profile");
@@ -155,6 +164,7 @@ public class Manager {
         }
         break;
 
+        // Here You can choose the Cashier's profile
       case 5:
         System.out.println("Cashier");
         System.out.println("Enter Cashier Profile");
@@ -187,6 +197,8 @@ public class Manager {
             break;
         }
         break;
+
+        // If Your input don't matches, then default case will execute.
       default:
         System.out.println("Wrong Choice");
         break;
