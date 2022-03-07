@@ -8,102 +8,104 @@ public class menu{
   String Total_order = "";
   int Total_Cost = 0;
     // Declaration of Food method in menu class
-    public void Food() 
-    {  
-        System.out.println("Enter Your Choice\n"); 
+  public void Food() 
+  {  
+    System.out.println("Enter Your Choice\n"); 
         
-        // Here You can choose which type of food you want
-        System.out.println("Enter 1 for Starter ");
-        System.out.println("Enter 2 for Veg ");
-        System.out.println("Enter 3 for Non-Veg ");
-        System.out.println("Enter 4 for Desserts ");
-        System.out.println("Enter 5 for Beverages ");
-        System.out.println("Enter 6 for Fast Food ");
+    // Here You can choose which type of food you want
+    System.out.println("Enter 1 for Starter ");
+    System.out.println("Enter 2 for Veg ");
+    System.out.println("Enter 3 for Non-Veg ");
+    System.out.println("Enter 4 for Desserts ");
+    System.out.println("Enter 5 for Beverages ");
+    System.out.println("Enter 6 for Fast Food ");
 
-         // Declaration and use of Scanner package.
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
+     // Declaration and use of Scanner package.
+    Scanner sc = new Scanner(System.in);
+    int choice = sc.nextInt();
 
-        // Declaration of switch statement
-        switch(choice){
-          case 1:
-            System.out.println("Starter");
-          // Starting for loop for Calculating menu with price.
-            for(int i = 1; i <= 10; i++){
-            System.out.println("Enter Your Starter Choices\n");
+    // Declaration of switch statement
+    switch(choice){
+
+      // *** Starter ***
+      case 1:
+        System.out.println("Starter");
+        // Starting for loop for the menu with price Calculations.
+        for(int i = 1; i <= 10; i++)
+        {
+          System.out.println("Enter Your Starter Choices\n");
             
-            // Here You can choose the Starter food
-            System.out.println("Enter 1 for Tandoori Chicken - ₹ 110 ");
-            System.out.println("Enter 2 for Chicken Tikka - ₹ 185 ");
-            System.out.println("Enter 3 for Plain Tangri Kabab - ₹ 215 ");
-            System.out.println("Enter 4 for Fish Tikka - ₹ 160 ");
-            System.out.println("Enter 5 for Onion Pakora - ₹ 60 ");
-            System.out.println("Enter 6 for Mattar Tikki - ₹ 70 ");
-            System.out.println("Enter 7 for Paneer Pakora - ₹ 100 ");
-            System.out.println("Enter 8 for Egg Pakora - ₹ 90 ");
-            System.out.println("Enter 9 for Chicken Pakora - ₹ 115 ");
-            System.out.println("Enter 10 for Afghani Chicekn - ₹ 175 ");
-            System.out.println("Enter 99 for exit");
+          // These are the list of Starter's.
+          System.out.println("Enter 1 for Tandoori Chicken - ₹ 110 ");
+          System.out.println("Enter 2 for Chicken Tikka - ₹ 185 ");
+          System.out.println("Enter 3 for Plain Tangri Kabab - ₹ 215 ");
+          System.out.println("Enter 4 for Fish Tikka - ₹ 160 ");
+          System.out.println("Enter 5 for Onion Pakora - ₹ 60 ");
+          System.out.println("Enter 6 for Mattar Tikki - ₹ 70 ");
+          System.out.println("Enter 7 for Paneer Pakora - ₹ 100 ");
+          System.out.println("Enter 8 for Egg Pakora - ₹ 90 ");
+          System.out.println("Enter 9 for Chicken Pakora - ₹ 115 ");
+          System.out.println("Enter 10 for Afghani Chicekn - ₹ 175 ");
+          System.out.println("Enter 99 for exit");
 
-            Scanner sc0 = new Scanner(System.in);
-            int starter = sc0.nextInt();
+          // Here You can choose the Starter food
+          Scanner sc0 = new Scanner(System.in);
+          int starter = sc0.nextInt();
             
-            switch(starter){
-              case 1:
-                System.out.println("Tandoori Chicken - ₹ 110 \n");
-                order = "Tandoori Chicken - ₹ 110";
-                cost = 110;
-                break;
-              case 2:
-                System.out.println("Chicken Tikka - ₹ 185\n");
-                order = "Chicken Tikka - ₹ 185";
-                cost = 185;
-                break;
-              case 3:
-                System.out.println("Plain Tangri Kabab - ₹ 215\n");
-                order = "Plain Tangri Kabab - ₹ 215";
-                cost = 215;
-                break;
-              case 4:
-                System.out.println("Fish Tikka - ₹ 160\n");
-                order = "Fish Tikka - ₹ 160";
-                cost = 160;
-                break;
-              case 5:
-                System.out.println("Onion Pakora - ₹ 60\n");
-                order = "Onion Pakora - ₹ 60";
-                cost = 60;
-                break;
-              case 6:
-                System.out.println("Mattar Tikki - ₹ 70\n");
-                order = "Mattar Tikki - ₹ 70";
-                cost = 70;
-                break;
-              case 7:
-                System.out.println("Paneer Pakora - ₹ 100\n");
-                order = "Paneer Pakora - ₹ 100";
-                cost = 100;
-                break;
-              case 8:
-                System.out.println("Egg Pakora - ₹ 90\n");
-                order = "Egg Pakora - ₹ 90";
-                cost = 90;
-                break;
-              case 9:
-                System.out.println("Chicken Pakora - ₹ 115\n");
-                order = "Chicken Pakora - ₹ 115";
-                cost = 115;
-                break;
-              case 10:
-                System.out.println("Afghani Chicekn - ₹ 175\n");
-                order = "Afghani Chicekn - ₹ 175";
-                cost = 175;
-                break;
-              default:
-                System.out.println("\n\n    Thanks For Coming!    \n");
-                order = "";
-                cost = 0;
-                break;
+          switch(starter){
+            case 1:
+              System.out.println("Tandoori Chicken - ₹ 110 \n");
+              order = "Tandoori Chicken - ₹ 110";
+              cost = 110;
+              break;
+            case 2:
+              System.out.println("Chicken Tikka - ₹ 185\n");
+              order = "Chicken Tikka - ₹ 185";
+              cost = 185;
+              break;
+            case 3:
+              System.out.println("Plain Tangri Kabab - ₹ 215\n");
+              order = "Plain Tangri Kabab - ₹ 215";
+              cost = 215;
+              break;
+            case 4:
+              System.out.println("Fish Tikka - ₹ 160\n");
+              order = "Fish Tikka - ₹ 160";
+              cost = 160;
+              break;
+            case 5:
+              System.out.println("Onion Pakora - ₹ 60\n");
+              order = "Onion Pakora - ₹ 60";
+              cost = 60;
+              break;
+            case 6:
+              System.out.println("Mattar Tikki - ₹ 70\n");
+              order = "Mattar Tikki - ₹ 70";
+              cost = 70;
+              break;
+            case 7:
+              System.out.println("Paneer Pakora - ₹ 100\n");
+              order = "Paneer Pakora - ₹ 100";
+              cost = 100;
+              break;
+            case 8:
+              System.out.println("Egg Pakora - ₹ 90\n");
+              order = "Egg Pakora - ₹ 90";
+              cost = 90;
+            case 9:
+              System.out.println("Chicken Pakora - ₹ 115\n");
+              order = "Chicken Pakora - ₹ 115";
+              cost = 115;
+              break;
+            case 10:
+              System.out.println("Afghani CHicken");
+              order = "Afghani CHicken - ₹ 175";
+              cost = 175;
+            default:
+              System.out.println("\n\n    Thanks For Coming!    \n");
+              order = "";
+              cost = 0;
+              break;
             }
             if(starter == 99){
               System.out.println("Your orders are:- \n" + Total_order + "\n");
@@ -115,18 +117,19 @@ public class menu{
               Total_order = Total_order + "\n" + order;
             }
             System.out.println("Your orders are:- \n"  + Total_order + "\n");
-            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
-            
+            System.out.println("Your Total Cost is : ₹ " + Total_Cost + "\n");            
           }
-            // Here You can choose the Vegetarian food.
             break;
-          case 2:
-            System.out.println("Veg");
 
-            for(int i = 1; i <= 10; i++){
+        // *** Vegetarian Food ***
+        case 2:
+          System.out.println("Veg");
 
+          for(int i = 1; i <= 10; i++)
+          {
             System.out.println("Select Your Food\n");
 
+            // These are the list of Vegetarian food.
             System.out.println("Enter 1 for Plain Rice - ₹ 70 ");
             System.out.println("Enter 2 for Paneer Parantha - ₹ 55 ");
             System.out.println("Enter 3 for Gobhi Parantha - ₹ 45 ");
@@ -139,6 +142,7 @@ public class menu{
             System.out.println("Enter 10 for  Mix Veg - ₹ 175 ");
             System.out.println("Enter 99 for exit");
 
+            // Here You can choose the Vegetarian food.
             int veg = sc.nextInt();
             switch(veg){
               case 1:
@@ -192,14 +196,14 @@ public class menu{
                 cost = 175;
                 break;
               default:
-                System.out.println(" Invalid Entry ");
-                cost = 0;
-                order = "";
-                break;
+              System.out.println("\n\n    Thanks For Coming!    \n");
+              order = "";
+              cost = 0;
+              break;
             }
             if(veg == 99){
               System.out.println("Your orders are:- \n" + Total_order + "\n");
-              System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
+              System.out.println("Your Total Cost is : ₹ " + Total_Cost + "\n");
               break;
             }
             else{
@@ -207,18 +211,19 @@ public class menu{
               Total_order = Total_order + "\n" + order;
             }
             System.out.println("Your orders are:- \n"  + Total_order + "\n");
-            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
-            
+            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");            
           }
             break;
-          // Here You can choose the Non Vegetarian food.
-          case 3:
-            System.out.println("   Non-Veg  ");
 
-            for(int i = 1; i <= 10; i++){
+        // *** Non Vegetarian Food ***
+        case 3:
+          System.out.println("   Non-Veg  ");
 
+          for(int i = 1; i <= 10; i++)
+          {
             System.out.println("Enter Your Nonveg Choices\n");
 
+            // These are the list of Non-Veg food.
             System.out.println("Enter 1 for Chicken Rice - ₹ 80 ");
             System.out.println("Enter 2 for Chicken Butter Masala - ₹ 255 ");
             System.out.println("Enter 3 for Hyderabadi Chicken - ₹ 275 ");
@@ -231,6 +236,7 @@ public class menu{
             System.out.println("Enter 10 for Egg Curry - ₹ 105 ");
             System.out.println("Enter 99 for exit");
 
+            // Here You can choose the Non Vegetarian food.
             Scanner sc1 = new Scanner(System.in);
             int nonveg = sc1.nextInt();
             switch(nonveg){
@@ -284,15 +290,15 @@ public class menu{
                 order = "Egg Curry - ₹ 105";
                 cost = 105;
                 break;
-              default:
-                System.out.println("Invalid Entry ");
+                default:
+                System.out.println("\n\n    Thanks For Coming!    \n");
                 order = "";
                 cost = 0;
                 break;
             }
             if(nonveg == 99){
               System.out.println("Your orders are:- \n" + Total_order + "\n");
-              System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
+              System.out.println("Your Total Cost is : ₹ " + Total_Cost + "\n");
               break;
             }
             else{
@@ -300,19 +306,19 @@ public class menu{
               Total_order = Total_order + "\n" + order;
             }
             System.out.println("Your orders are:- \n"  + Total_order + "\n");
-            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
-            
+            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");           
           }
             break;
 
-            // Here You can choose the Desserts.
-          case 4:
-            System.out.println("Desserts");
+        // *** Desserts ***
+        case 4:
+          System.out.println("Desserts");
 
-            for(int i = 1; i <= 10; i++){
-
+          for(int i = 1; i <= 10; i++)
+          {
             System.out.println("Enter Your Deserts Choices\n");
 
+            // These are the list of Desserts.
             System.out.println("Enter 1 for Gulab Jamun - ₹ 20 ");
             System.out.println("Enter 2 for Kaju ki Barfi - ₹ 25 ");
             System.out.println("Enter 3 for Gajar ka halwa - ₹ 45 ");
@@ -325,7 +331,7 @@ public class menu{
             System.out.println("Enter 10 for Rasmalai - ₹ 25 ");
             System.out.println("Enter 99 for exit");
 
-
+            // Here You can choose the Desserts.
             Scanner sc2 = new Scanner(System.in);
             int desserts = sc2.nextInt();
             switch(desserts){
@@ -379,9 +385,9 @@ public class menu{
                 order = "Rasmalai - ₹ 25";
                 cost = 25;
                 break;
-              default:
-                System.out.println(" Invalid Entry ");
-                order ="";
+                default:
+                System.out.println("\n\n    Thanks For Coming!    \n");
+                order = "";
                 cost = 0;
                 break;
             }
@@ -395,19 +401,19 @@ public class menu{
               Total_order = Total_order + "\n" + order;
             }
             System.out.println("Your orders are:- \n"  + Total_order + "\n");
-            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
-            
+            System.out.println("Your Total Cost is : ₹ " + Total_Cost + "\n");   
           }
             break;
 
-            // Here You can choose the Beverages to drink
-          case 5:
-            System.out.println("Beverages");
+        // *** Beverages ***
+        case 5:
+          System.out.println("Beverages");
 
-            for(int i = 1; i <= 10; i++){
-
+          for(int i = 1; i <= 10; i++)
+          {
             System.out.println("Enter Your Beverages Choices\n");
 
+            // These are the list of Beverages for drink.
             System.out.println("Enter 1 for Mango shake - ₹ 50 ");
             System.out.println("Enter 2 for Badam shake - ₹ 45 ");
             System.out.println("Enter 3 for Kaju shake - ₹ 50 ");
@@ -420,6 +426,7 @@ public class menu{
             System.out.println("Enter 10 for Cold COffee - ₹ 132 ");
             System.out.println("Enter 99 for exit");
 
+            // Here You can choose the Beverages to drink
             Scanner sc3 = new Scanner(System.in);
             int beverages = sc3.nextInt();
             switch(beverages){
@@ -473,8 +480,8 @@ public class menu{
                 order = "Cold COffee - ₹ 132";
                 cost = 132;
                 break;
-              default:
-                System.out.println("Invalid Entry ");
+                default:
+                System.out.println("\n\n    Thanks For Coming!    \n");
                 order = "";
                 cost = 0;
                 break;
@@ -489,19 +496,19 @@ public class menu{
               Total_order = Total_order + "\n" + order;
             }
             System.out.println("Your orders are:- \n"  + Total_order + "\n");
-            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
-            
+            System.out.println("Your Total Cost is : ₹ " + Total_Cost + "\n");       
           }
             break;
 
-            // Here You can choose the fast food.
-          case 6:
-            System.out.println("  Fast Food  ");
+        // *** Fast Food ***
+        case 6:
+          System.out.println("  Fast Food  ");
 
-            for(int i = 1; i <= 10; i++){
-
+          for(int i = 1; i <= 10; i++)
+          {
             System.out.println("Enter Your Choices for Fastfood\n");
 
+            // These are the list of Fast-food.
             System.out.println("Enter 1 for Noodles - ₹ 70 ");
             System.out.println("Enter 2 for Momos - ₹ 55 ");
             System.out.println("Enter 3 for Chicken Chilly - ₹ 45 ");
@@ -514,6 +521,7 @@ public class menu{
             System.out.println("Enter 10 for Sandwich - ₹ 175 ");
             System.out.println("Enter 99 for exit");
 
+            // Here You can choose the fast food.
             Scanner sc4 = new Scanner(System.in);
             int fast_food = sc4.nextInt();
             switch(fast_food){
@@ -567,15 +575,15 @@ public class menu{
                 order = "Sandwich - ₹ 175";
                 cost = 175;
                 break;
-              default:
-                System.out.println("Invalid Entry ");
+                default:
+                System.out.println("\n\n    Thanks For Coming!    \n");
                 order = "";
                 cost = 0;
                 break;
             }
             if(fast_food == 99){
               System.out.println("Your orders are:- \n" + Total_order + "\n");
-              System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
+              System.out.println("Your Total Cost is : ₹ " + Total_Cost + "\n");
               break;
             }
             else{
@@ -583,8 +591,7 @@ public class menu{
               Total_order = Total_order + "\n" + order;
             }
             System.out.println("Your orders are:- \n"  + Total_order + "\n");
-            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");
-            
+            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");      
           }
           break;
             // If wrong input entered, then it will show this default case

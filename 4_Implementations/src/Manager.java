@@ -4,21 +4,37 @@ import java.util.Scanner; // Java package used for taking input in java
 // Declaration of Manager class
 public class Manager {
 
-  // Declaration of nmanager method.
+  // Declaration of manager method.
   public void manager(){
-    System.out.println("Welcome Manager");
-    System.out.println("Enter Your Choice whom profile You want to see");
+    System.out.println("        Welcome Manager   \n\n");
+    System.out.println("Enter Your Choice whom profile You want to see\n");
+    // These are the list of Working Department.
+    System.out.println("Enter 1 for Master Chef Department");
+    System.out.println("Enter 2 for Waiter Department");
+    System.out.println("Enter 3 for Security Guard Department");
+    System.out.println("Enter 4 for Room Cleaner Department");
+    System.out.println("Enter 5 for Cashier Department\n");
+
+    // Here You can choose the Working Department whom you want to see the profile.
     Scanner sc = new Scanner(System.in);
     int choice = sc.nextInt();
-    // Here You can choose the employee profile
+  
     switch(choice){
       case 1:
-        System.out.println("Master Chef");
-        System.out.println("Enter the person profile");
+        System.out.println("Master Chef\n");
+        System.out.println("Enter the person profile\n");
+
+        // These are the list of Masterchefs.
+        System.out.println("Enter 1 for Mr. ABC profile ");
+        System.out.println("Enter 2 for Mr. BCD profile");
+        System.out.println("Enter 3 for Mr. CDE profile\n");
+
         Scanner sc1 = new Scanner(System.in);
         int masterchef = sc1.nextInt();
         // Here You can select the profile of the Masterchefs.
         switch(masterchef){
+
+          // *** Masterchef ***
           case 1:
             System.out.println("Name - Mr. ABC");
             System.out.println("Age - 31 years");
@@ -44,14 +60,23 @@ public class Manager {
             System.out.println("Contact mail:- CDE@gmail.com");
             break;
           default:
-            System.out.println("Wrong Input");
+            System.out.println("SORRY! Wrong Input");
         }
         break;
 
-        // Here You can choose the profile of Waiters.
+      // *** Waiter ***
       case 2:
-        System.out.println("Waiter");
-        System.out.println("Enter the Waiter profile");
+        System.out.println("Waiter\n");
+        System.out.println("Enter the Waiter profile\n");
+
+        // These are the list of Waiters;
+        System.out.println("Enter 1 for Mr. PQRS profile ");
+        System.out.println("Enter 2 for Mr. QRSTprofile ");
+        System.out.println("Enter 3 for Mr. RSTU profile ");
+        System.out.println("Enter 4 for Mr. STUV profile ");
+        System.out.println("Enter 5 for Mr. TUVW profile \n");
+
+        // Here You can choose the profile of Waiters.
         Scanner sc2 = new Scanner(System.in);
         int waiter = sc2.nextInt();
         switch(waiter){
@@ -91,15 +116,22 @@ public class Manager {
             System.out.println("Contact mail:- TUVW@gmail.com");
             break;
           default:
-            System.out.println("Wrong Input");
+            System.out.println("SORRY! Wrong Input");
             break;
         }
         break;
 
-        // Here You can choose the profile of Security Guards.
+      // *** Security Guard ***
       case 3:
-        System.out.println("Scurity Guard");
-        System.out.println("Enter Scurity Guard choice profile");
+        System.out.println("Scurity Guard\n");
+        System.out.println("Enter Scurity Guard choice profile\n");
+
+        // These are the list of Security Guards.
+        System.out.println("Enter 1 for Rakesh Kumar profile ");
+        System.out.println("Enter 2 for Aryan Sharma ");
+        System.out.println("Enter 3 for Gautam Singh ");
+
+        // Here You can choose the profile of Security Guards.
         Scanner sc3 = new Scanner(System.in);
         int guard = sc3.nextInt();
         switch(guard){
@@ -125,15 +157,22 @@ public class Manager {
             System.out.println("Contact mail:- NA");
             break;
           default:
-            System.out.println("Wrong Choice");
+            System.out.println("SORRY! Wrong input");
             break;
         }
         break;
 
-        // Here You can choose the profile of Room cleaners.
+      // *** Room CLeaner ***
       case 4:
-        System.out.println("Room Cleaner");
-        System.out.println("Enter choice of room cleaner profile");
+        System.out.println("Room Cleaner\n");
+        System.out.println("Enter choice of room cleaner profile\n");
+
+        // These are the list of Room Cleaners.
+        System.out.println("Enter 1 for Ravindra Kumar profile ");
+        System.out.println("Enter 2 for Raju Srivastav profile ");
+        System.out.println("Enter 3 for Ramu Singh profile ");
+
+        // Here You can choose the profile of Room cleaners.
         Scanner sc4 = new Scanner(System.in);
         int cleaner = sc4.nextInt();
         switch(cleaner){
@@ -159,15 +198,22 @@ public class Manager {
             System.out.println("Contact mail:- NA");
             break;
           default:
-            System.out.println("Wrong Choice");
+            System.out.println("SORRY! Wrong Input");
             break;
         }
         break;
 
-        // Here You can choose the Cashier's profile
+      // *** Cashier ***
       case 5:
-        System.out.println("Cashier");
-        System.out.println("Enter Cashier Profile");
+        System.out.println("Cashier\n");
+        System.out.println("Enter Cashier Profile\n");
+
+        // These are the list of Cashier's.
+        System.out.println("Enter 1 for Mr. XYZ profile ");
+        System.out.println("Enter 2 for Mr. YST profile ");
+        System.out.println("Enter 3 for Mr. VWX profile ");
+
+        // Here You can choose the Cashier's profile
         Scanner sc5 = new Scanner(System.in);
         int cashier = sc5.nextInt();
         switch(cashier){
@@ -193,7 +239,7 @@ public class Manager {
             System.out.println("Contact mail:- VWX@gmail.com");
             break;
           default:
-            System.out.println("Wrong Choice");
+            System.out.println("SORRY! Wrong Input");
             break;
         }
         break;

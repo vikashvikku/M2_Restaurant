@@ -24,9 +24,9 @@ class Restaurant{
 
     // Starting conditional if else statement to check the credentials
     if (username.equals(Username) && password.equals(Password)) {
-        System.out.println("Access Granted! Welcome!");
+        System.out.println("Access Granted! Welcome!\n");
 
-        // Accessing the manager class with the help of object.
+        // Accessing the Manager class with the help of mng object from the Manager file.
         Manager mng = new Manager();
         mng.manager();
     }
@@ -38,7 +38,6 @@ class Restaurant{
     } else {
         System.out.println("Invalid Username & Password!");
     }
-
 }
 
 
@@ -46,6 +45,7 @@ class Restaurant{
   public static void main(String []args) {
   System.out.println("\n\n    ***** Welcome to Restaurant ***** \n\n");
 
+  // These are the list of our Access menu.
   System.out.println("For Manager press 1 ");
   System.out.println("For Customer press 2 ");
   System.out.println("For Exit press 3 ");
@@ -53,11 +53,11 @@ class Restaurant{
   int enter = sc.nextInt();
   // Using the conditional statement for using/running the program accordingly.
   if(enter == 1){
-    // Calling the login() method
+    // Calling the login() method which is of type static.
     login();
   }
   else if(enter == 2){
-    // Accessing the menu class with the help of mn Objects.
+    // Accessing the menu class with the help of mn Objects from the menu file.
   menu mn = new menu();
   mn.Food();
   }
