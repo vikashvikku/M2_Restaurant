@@ -9,6 +9,7 @@ public class Manager {
     System.out.println("        Welcome Manager   \n\n");
     System.out.println("Enter Your Choice whom profile You want to see\n");
     // These are the list of Working Department.
+    System.out.println("Enter 0 for Manager Profile");
     System.out.println("Enter 1 for Master Chef Department");
     System.out.println("Enter 2 for Waiter Department");
     System.out.println("Enter 3 for Security Guard Department");
@@ -20,6 +21,18 @@ public class Manager {
     int choice = sc.nextInt();
   
     switch(choice){
+      // This the the profile of manager.
+      case 0:
+        System.out.println("Manager Profile");
+
+        System.out.println("Name - Mr. Rahul Singh");
+        System.out.println("Age - 30 years");
+        System.out.println("Education : - MBA");
+        System.out.println("Working since - 7 years and 9 months");
+        System.out.println("Salary = RS. 105000");
+        System.out.println("Contact mail:- rahulamba@gmail.com");
+        break;
+
       case 1:
         System.out.println("Master Chef\n");
         System.out.println("Enter the person profile\n");
@@ -74,7 +87,12 @@ public class Manager {
         System.out.println("Enter 2 for Mr. QRSTprofile ");
         System.out.println("Enter 3 for Mr. RSTU profile ");
         System.out.println("Enter 4 for Mr. STUV profile ");
-        System.out.println("Enter 5 for Mr. TUVW profile \n");
+        System.out.println("Enter 5 for Mr. TUVW profile ");
+        System.out.println("Enter 6 for Mr. UVWX profile ");
+        System.out.println("Enter 7 for Mr. VWXY profile ");
+        System.out.println("Enter 8 for Mr. WXYZ profile ");
+        System.out.println("Enter 9 for Mr. XYZA profile ");
+        System.out.println("Enter 10 for Mr. YZAB profile \n");
 
         // Here You can choose the profile of Waiters.
         Scanner sc2 = new Scanner(System.in);
@@ -97,7 +115,7 @@ public class Manager {
           case 3:
             System.out.println("Name - Mr. RSTU");
             System.out.println("Age - 20 years");
-            System.out.println("Working since - 6 months");
+            System.out.println("Working since - 0 Years 6 months");
             System.out.println("Salary = RS. 15000");
             System.out.println("Contact mail:- RSTU@gmail.com");
             break;
@@ -115,6 +133,41 @@ public class Manager {
             System.out.println("Salary = RS. 31000");
             System.out.println("Contact mail:- TUVW@gmail.com");
             break;
+          case 6:
+            System.out.println("Name - Mr. UVWX");
+            System.out.println("Age - 23 years");
+            System.out.println("Working since - 0 years and 3 months");
+            System.out.println("Salary = RS. 12000");
+            System.out.println("Contact mail:- UVWX@gmail.com");
+            break;
+          case 7:
+            System.out.println("Name - Mr. VWXY");
+            System.out.println("Age - 35 years");
+            System.out.println("Working since - 3 years and 5 months");
+            System.out.println("Salary = RS. 38500");
+            System.out.println("Contact mail:- VWXY@gmail.com");
+            break;
+          case 8:
+            System.out.println("Name - Mr. WXYZ");
+            System.out.println("Age - 29 years");
+            System.out.println("Working since - 4 years and 5 months");
+            System.out.println("Salary = RS. 34500");
+            System.out.println("Contact mail:- WXYZ@gmail.com");
+            break;
+          case 9:
+            System.out.println("Name - Mr. XYZA");
+            System.out.println("Age - 18 years");
+            System.out.println("Working since - 0 years and 1 months");
+            System.out.println("Salary = RS. 15000");
+            System.out.println("Contact mail:- XYZA@gmail.com");
+            break;
+          case 10:
+            System.out.println("Name - Mr. YZAB");
+            System.out.println("Age - 46 years");
+            System.out.println("Working since - 3 years and 7 months");
+            System.out.println("Salary = RS. 37500");
+            System.out.println("Contact mail:- YZAB@gmail.com");
+            break;
           default:
             System.out.println("SORRY! Wrong Input");
             break;
@@ -129,7 +182,7 @@ public class Manager {
         // These are the list of Security Guards.
         System.out.println("Enter 1 for Rakesh Kumar profile ");
         System.out.println("Enter 2 for Aryan Sharma ");
-        System.out.println("Enter 3 for Gautam Singh ");
+        System.out.println("Enter 3 for Gautam Singh \n");
 
         // Here You can choose the profile of Security Guards.
         Scanner sc3 = new Scanner(System.in);
@@ -170,7 +223,7 @@ public class Manager {
         // These are the list of Room Cleaners.
         System.out.println("Enter 1 for Ravindra Kumar profile ");
         System.out.println("Enter 2 for Raju Srivastav profile ");
-        System.out.println("Enter 3 for Ramu Singh profile ");
+        System.out.println("Enter 3 for Ramu Singh profile \n");
 
         // Here You can choose the profile of Room cleaners.
         Scanner sc4 = new Scanner(System.in);
@@ -211,7 +264,7 @@ public class Manager {
         // These are the list of Cashier's.
         System.out.println("Enter 1 for Mr. XYZ profile ");
         System.out.println("Enter 2 for Mr. YST profile ");
-        System.out.println("Enter 3 for Mr. VWX profile ");
+        System.out.println("Enter 3 for Mr. VWX profile \n");
 
         // Here You can choose the Cashier's profile
         Scanner sc5 = new Scanner(System.in);

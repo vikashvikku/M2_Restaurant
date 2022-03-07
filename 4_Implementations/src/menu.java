@@ -19,6 +19,7 @@ public class menu{
     System.out.println("Enter 4 for Desserts ");
     System.out.println("Enter 5 for Beverages ");
     System.out.println("Enter 6 for Fast Food ");
+    System.out.println("Enter 7 for Ice-cream ");
 
      // Declaration and use of Scanner package.
     Scanner sc = new Scanner(System.in);
@@ -594,6 +595,102 @@ public class menu{
             System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");      
           }
           break;
+
+        // *** Ice-cream ***
+        case 7:
+          System.out.println("  Ice-cream  ");
+
+          for(int i = 1; i <= 10; i++)
+          {
+            System.out.println("Enter Your Choices for Icecream\n");
+
+            // These are the list of Ice-cream.
+            System.out.println("Enter 1 for Butter Scotch - ₹ 160 ");
+            System.out.println("Enter 2 for Choco Chip - ₹ 115 ");
+            System.out.println("Enter 3 for Hot Chocolste fudge sundae - ₹ 110 ");
+            System.out.println("Enter 4 for Vanilla - ₹ 130 ");
+            System.out.println("Enter 5 for Butter Scotch Top cone - ₹ 40 ");
+            System.out.println("Enter 6 for Paan Icecream - ₹ 55 ");
+            System.out.println("Enter 7 for Dry Fruits Icecream - ₹ 65 ");
+            System.out.println("Enter 8 for Pista Kulfi - ₹ 40 ");
+            System.out.println("Enter 9 for Strawberry - ₹ 35 ");
+            System.out.println("Enter 10 for Afghan Dry Fruit Icecream - ₹ 250 ");
+            System.out.println("Enter 99 for exit");
+
+            // Here You can choose the Icecream.
+            Scanner sc5 = new Scanner(System.in);
+            int icecream = sc5.nextInt();
+            switch(icecream){
+              case 1:
+                System.out.println("Butter Scotch - ₹ 160 ");
+                order = "Butter Scotch - ₹ 160";
+                cost = 70;
+                break;
+              case 2:
+                System.out.println("Choco Chip - ₹ 115");
+                order = "Choco Chip - ₹ 115";
+                cost = 55;
+                break;
+              case 3:
+                System.out.println("Hot Chocolste fudge sundae - ₹ 110");
+                order = "Hot Chocolste fudge sundae - ₹ 110";
+                cost = 45;
+                break;
+              case 4:
+                System.out.println("Vanilla - ₹ 130");
+                order = "Vanilla - ₹ 130";
+                cost = 40;
+                break;
+              case 5:
+                System.out.println("Butter Scotch Top cone - ₹ 40");
+                order = "Butter Scotch Top cone - ₹ 40";
+                cost = 110;
+                break;
+              case 6:
+                System.out.println("Paan Icecream - ₹ 55");
+                order = "Paan Icecream - ₹ 55";
+                cost = 60;
+                break;
+              case 7:
+                System.out.println("Dry Fruits Icecream - ₹ 65");
+                order = "Dry Fruits Icecream - ₹ 65";
+                cost = 200;
+                break;
+              case 8:
+                System.out.println("Pista Kulfi - ₹ 40");
+                order = "Pista Kulfi - ₹ 40";
+                cost = 210;
+                break;
+              case 9:
+                System.out.println("Strawberry - ₹ 35");
+                order = "Strawberry - ₹ 35";
+                cost = 195;
+                break;
+              case 10:
+                System.out.println("Afghan Dry Fruit Icecream - ₹ 250");
+                order = "Afghan Dry Fruit Icecream - ₹ 250";
+                cost = 175;
+                break;
+                default:
+                System.out.println("\n\n    Thanks For Coming!    \n");
+                order = "";
+                cost = 0;
+                break;
+            }
+            if(icecream == 99){
+              System.out.println("Your orders are:- \n" + Total_order + "\n");
+              System.out.println("Your Total Cost is : ₹ " + Total_Cost + "\n");
+              break;
+            }
+            else{
+              Total_Cost = Total_Cost + cost;
+              Total_order = Total_order + "\n" + order;
+            }
+            System.out.println("Your orders are:- \n"  + Total_order + "\n");
+            System.out.println("Your Total Cost is :- ₹ " + Total_Cost + "\n");      
+          }
+          break;
+
             // If wrong input entered, then it will show this default case
           default:
             System.out.println("Sorry! Wrong Input");

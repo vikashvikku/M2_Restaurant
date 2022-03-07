@@ -63,7 +63,7 @@ class Restaurant{
   }
   else{
     // In case wrong inputs it will exit the program after else statement.
-    System.out.println("SORRY! Wrong Input");
+    System.out.println("Thanks For Coming");
   }
 }
 }
