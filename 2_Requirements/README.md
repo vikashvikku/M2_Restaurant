@@ -20,11 +20,11 @@ The customer can able to order any dishes, after which customer can see the tota
  ### Manager
  
  - Masterchef
- -Waiter
- -Security Guard
+ - Waiter
+ - Security Guard
  - Room Cleaner
- -Cashier
- -Manager Profile
+ - Cashier
+ - Manager Profile
  
  ### Customer
 - Starter
@@ -33,7 +33,7 @@ The customer can able to order any dishes, after which customer can see the tota
 - Desserts
 - Beverages
 - Fast Food
--Icecream
+- Icecream
  
  
 # Advantages
