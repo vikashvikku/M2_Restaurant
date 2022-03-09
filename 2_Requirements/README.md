@@ -15,9 +15,10 @@ The customer can able to order any dishes, after which customer can see the tota
  ### 2. Customer
  
  
- ## Low Level Requirements
+## Low Level Requirements
  
  ### Manager
+ 
  - Masterchef
  -Waiter
  -Security Guard
@@ -26,13 +27,13 @@ The customer can able to order any dishes, after which customer can see the tota
  -Manager Profile
  
  ### Customer
- - Starter
- - Veg
- - Non-Veg
- - Desserts
- - Beverages
- - Fast Food
- -Icecream
+- Starter
+- Veg
+- Non-Veg
+- Desserts
+- Beverages
+- Fast Food
+-Icecream
  
  
 # Advantages
