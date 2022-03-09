@@ -1,2 +1,2 @@
 # Username = wisdom
-# paswword = 123
+# password = 123
